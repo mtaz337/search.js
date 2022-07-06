@@ -38,9 +38,7 @@ const SearchBarComponent = {
       if(solved_res.exists==true && rejected_link.exists==false ){
           console.log(' system solve api te dhukse');
           const response = await axios.post("/systemsolve", {"product_url":url});
-          if(response.orderCreated){
           setTimeout(function(){ window.location = "/requests/approved"; }, 2500);
-          }
       }
       else {
           window.location = "/product-review/";        

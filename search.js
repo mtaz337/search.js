@@ -33,10 +33,10 @@ const SearchBarComponent = {
       const Previously_solved = await axios.post("/prevOrder", {"url":url});
       console.log('so far so good, previous solved data e dhukse', Previously_solved);
       const solved_res = Previously_solved.data;
-      console.log(Previously_solved,rejected_link );
+      setTimeout(function(){console.log(Previously_solved,rejected_link );},1200);
       
       if(solved_res.exists==true && rejected_link.exists==false ){
-          console.log(' system solve api te dhukse');
+        setTimeout(function(){console.log(' system solve api te dhukse');},1200);
           const response = await axios.post("/systemsolve", {"product_url":url});
           setTimeout(function(){ window.location = "/requests/approved"; }, 2500);
       }

@@ -75,4 +75,5 @@ prev.addEventListener('click', (e) => {
 next.addEventListener('click', (e) => {
     startX = e.pageX - swiper.offsetLeft;
     swiper.scrollLeft += swiperItemWidth * 2;
+    console.log('clicked next');
 });

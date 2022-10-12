@@ -62,7 +62,7 @@ const BannerComponent = {
         // },
         {
             name: "2",
-            link: "image/banner/uk/2.png"
+            link: "https://i.ibb.co/1Gbjjn1/Canada-Big-Banner-01.jpg"
         },
         
     ],
